@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domain Names - We Have Hundreds Of Domain Names</title>
+  <style>
+    :root {
+      --primary: #1a73e8;
+      --text: #202124;
+      --muted: #5f6368;
+      --bg: #ffffff;
+      --border: #dadce0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.7rem 1.5rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .cta:hover {
+      background: #1557b0;
+    }
+
+    .note {
+      background: #f8f9fa;
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    .search-box {
+      margin: 1.5rem 0 2rem;
+      text-align: center;
+    }
+
+    #search {
+      width: 100%;
+      max-width: 500px;
+      padding: 0.85rem 1rem;
+      font-size: 1rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      outline: none;
+    }
+
+    #search:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
+    }
+
+    h2 {
+      margin: 2rem 0 1rem;
+      font-size: 1.5rem;
+    }
+
+    .domains {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .domain {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #eee;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.95rem;
+    }
+
+    .domain:hover {
+      color: var(--primary);
+    }
+
+    .blog-posts {
+      list-style: none;
+    }
+
+    .blog-posts li {
+      margin-bottom: 0.75rem;
+    }
+
+    .blog-posts a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .blog-posts a:hover {
+      text-decoration: underline;
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    #scrollTop {
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    #scrollTop:hover {
+      background: #f1f3f4;
+    }
+
+    @media (max-width: 600px) {
+      .domains {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Domain Names</h1>
+      <p class="subtitle">We Have Hundreds Of Domain Names</p>
+      <p>We have hundreds of domains, so whether you are browsing for ideas or looking for specific keywords, we have you covered!</p>
+      <br>
+      <a href="#contact" class="cta">How To Buy</a>
+    </header>
+
+    <div class="note">
+      <strong>You may search keywords to filter domain names.</strong><br>
+      Contact Us for a domain name price.
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search domains (e.g. almond, bitcoin, golf...)">
+    </div>
+
+    <h2>New Medium Domain Names</h2>
+    <div class="domains" id="domainList">
+      <!-- Domains will be inserted by JavaScript -->
+    </div>
+
+    <h2>Latest Blog Posts</h2>
+    <ul class="blog-posts">
+      <li><a href="#">Chain Analyze dot com for sale</a><span class="date">December 19, 2021</span></li>
+      <li><a href="#">BankLoan.app for sale</a><span class="date">December 19, 2021</span></li>
+      <li><a href="#">CryptoCoin.app for sale</a><span class="date">December 14, 2021</span></li>
+    </ul>
+
+    <footer id="contact">
+      <p>Interested in a domain? Contact us for pricing.</p>
+      <br>
+      <button id="scrollTop">Scroll to top</button>
+    </footer>
+  </div>
+
+  <script>
+    // Sample of real domains from newmedium.com/domain-names/
+    const domains = [
+      "24hrcaregiver.com","2dplans.com","30ny.com","64dc.com","888beauty.com","888enterprise.com","888finances.com",
+      "888kiss.com","888lease.com","888rental.com","888rentals.com","888singles.com","aaaengineers.com","acb6.com",
+      "agricultec.com","airyisland.com","alamjaad.com","alaskanholidays.com","allerson.com","almondbeverage.com",
+      "almondbrew.com","almondfrappe.com","almondm.com","almondmilk.com","almondmilkmaker.com","almondmilksoap.com",
+      "almondmlk.com","antiquesfleamarket.com","apricotrose.com","aquanecklace.com","arcadiawine.com","archivepaper.com",
+      "artsandcraftsfair.com","artwel.com","atmosbike.com","atmosbikes.com","atmospherebike.com","auctions888.com",
+      "backyardreno.com","backyardrenos.com","baiachia.com","bcaengineering.com","beanerycafe.com","beautyprotein.com",
+      "belfastphotography.com","bionorge.com","bitcoinaustausch.com","bitcoinbangko.com","bitcoinpankki.com","bitcoinwechsel.com",
+      "bleulake.com","bloomsoaps.com","blueearring.com","bluegreenorganics.com","bonhause.com","briargolf.com",
+      "bridalveil.ca","btcbangko.com","btcpankki.com","btcvaluta.com","btcverkaufen.com","btcwechsel.com","btcwechseln.com",
+      "bulbcatalog.com","bulbcatalogue.com","bulbguide.com","bunaco.com","canelco.com","cannabissake.com","cannasake.com",
+      "caraannee.com","cashewbeverage.com","catalogued.org","cediah.com","certaincare.com","chainanalyses.com",
+      "chainanalyzes.com","chainsignature.com","chainsignatures.com","clinicaldentistry.org","clonedpet.com","co2trading.net",
+      "co2trading.org","cocobeach.org","compumend.com","coppergaiter.com","crafttalent.com","crestones.com",
+      "crisiscenter.info","crisiscentre.com","crisiscentre.net","crisiscentre.org","crygen.com","cuisineguide.com",
+      "cybrbike.com","cybrbikes.com","dairsie.com","delawareorthopaedics.com","diamondbrewery.com","diamondroses.com",
+      "ditelu.com","dpocc.com","drafting.app","dropcalories.com","eaglenecklace.com","earnairmiles.com","eastmed1.com",
+      "ebandaid.com","egamesclub.com","egamesclub.org","electriccarrepair.ca","emecconsulting.com","envirointeriors.com",
+      "estatesolicitors.com","etechdesign.com","etechsigns.com","evauto.ca","evcarrepair.ca","evgarage.ca","evrepairshop.com",
+      "evserviceshop.com","eyehealthcentre.com","faboce.com","fancyframes.com","fiddlede.com","fiddledee.com","fix9.com",
+      "flaxbeverage.com","flowercatalogue.com","foodiecookbook.com","fortunecommerce.com","garey.info","goldnfish.com",
+      "gothicroses.com","grandcactus.com","greenbrookdental.com","greencorset.com","greenscapenursery.com","grillinstitute.com",
+      "growquip.com","halloday.com","harborcollision.com","harlott.com","healinginsomnia.com","hearbalsoups.com","hearron.com",
+      "hepatitisshot.com","hepatitisshots.com","heraklion.org","herbalsoup.com","herbalsoups.com","herbcatalogue.com",
+      "hiddencreekgolf.com","hikemagazine.com","hikermagazine.com","hikingmagazine.com","hondaminivan.com","hoveraero.com",
+      "ibandage.com","informando.org","interactivebandage.com","ironmansports.com","jadaskin.com","jigthejoker.com","jilanne.com",
+      "kanghoon.com","kenosports.com","ladyswim.com","lakebleu.com","lakecountryhealth.com","lenailssalon.com","longhorncasino.com",
+      "loveyouhealth.com","lowfatdairy.com","luckypetcare.com","lugrin.com","maineseafoods.com","mccardy.com","mccormickgolf.com",
+      "mechael.com","mensworldcup.com","merrillproperties.com","metabolicbooster.com","metafaceshield.com","metafacevisor.com",
+      "metapetstore.com","metashieldvisor.com","metavender.com","moments.golf","nashvilledermatology.com","nationalrepublicans.com",
+      "naturehealth.com","naturehealthmagazine.com","neteasebitcoin.com","neteasecoin.com","newjerseymidwife.com","newportaccounting.com",
+      "newwestmall.com","nexbios.com","nextbios.com","nftanalyse.com","nftbanque.com","northernlock.com","nutbeverage.com",
+      "oakhilltree.com","oakridgefurniture.com","oatbeverage.com","oshawanaturopath.com","ospreysailing.com","otcstockmarkets.com",
+      "paintingroses.com","palacol.com","palmjuice.com","panatieris.com","parkingleasing.com","parkingrenting.com","pedicurist.net",
+      "perennialguide.com","physicstechnology.com","pirkiniai.com","plantcatalogue.com","potcatalogue.com","psiaf.com",
+      "pumphousegrille.com","quilting.info","qzss.org","raintreesalon.com","realdollar.com","redpendant.com","rhodeislandclinic.com",
+      "ricebeverage.com","roisan.com","rootingroses.com","rosebracelet.com","rosecatalog.com","rosecatalogue.com","rosemagazine.net",
+      "rosemagazine.org","rosemildew.com","rosiebabe.com","rosiebaby.com","rosyposybaby.com","seagrest.com","seedcatalogue.com",
+      "seekfoods.com","seekmeat.com","seekmeats.com","shandabitcoin.com","shandacoin.com","shanghaioptical.com","shareappartment.com",
+      "sharecondo.com","shrubrose.com","siiss.com","silverchalet.com","sinabitcoin.com","sogoubitcoin.com","solarpatioroof.com",
+      "solarpowerfilm.com","sourdoughbread.net","starteast.com","summithawaii.com","swegan.com","techbaits.com","tennismoments.com",
+      "thailandfruits.com","thermosleep.com"
+    ];
+
+    const listEl = document.getElementById('domainList');
+    const searchEl = document.getElementById('search');
+
+    function render(domainsToShow) {
+      listEl.innerHTML = domainsToShow.map(d => `<div class="domain">${d}</div>`).join('');
+    }
+
+    function filter() {
+      const term = searchEl.value.toLowerCase().trim();
+      const filtered = term 
+        ? domains.filter(d => d.includes(term))
+        : domains;
+      render(filtered);
+    }
+
+    searchEl.addEventListener('input', filter);
+    render(domains);
+
+    document.getElementById('scrollTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
